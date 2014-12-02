@@ -6,12 +6,12 @@ background-image:url("me13.jpg");
 }
 
 #wrapper{
-   background-color:#E1E1E1;
+  background-image: url("me7.jpg");
 
 	width:960px;
 	height:829px;
 	margin:0 auto;
-	
+	 border: 2px solid #yellow;
 	}
 
 #home,#classes,#about,#contact{
@@ -24,11 +24,11 @@ s
 
  #header .container {
 
-	background-image:url("f1.jpg");
+	background-image: url("f1.jpg");
 	padding:10px 0 0 50px;
 	margin-bottom:20px;
 	height:150px;
-	 border: 1px solid black;
+	 border: 1px solid gold;
 	
 
 }
@@ -46,37 +46,37 @@ s
 	margin-left:90px; 
 	padding:10px 20px 10px 20px;
 	float:left;
-	border:2px solid black;
+	border:1px solid black;
 	}
 
 /* unvisited link */
 a:link {
-    color: #0000FF;
+    color:blue;
 }
 
 /* visited link */
 a:visited {
-    color: #0000FF;
+    color: blue;
 }
 
 /* mouse over link */
 a:hover {
-    color: #FF0000;
+    color: blue;
 }
 
 /* selected link */
 a:active {
-    color: #0000FF;
+    color: white;
 	
 }
 
 #main_content{
 	border:1px solid black;
- background-image:url("me14.jpg");
+background-color:#FFFFFF;
 	padding-top:10px;
 	height:800px;
 	clear:left;
-
+ border: 2px solid #FFD400;
 	
 }
 
@@ -96,9 +96,9 @@ border-width:30px;
   background-image:url("me12.jpg");
 margin-top:20px;
 width:600px;
-border:31px solid yellow;
+border:4px solid yellow;
 height:160px;
-margin-left:180px;
+margin-left:170px;
 border-style:groove;
  border-color:#FFAA2A;
  
@@ -109,9 +109,14 @@ border-style:groove;
 	 margin-left:180px;
 	 margin-top:60px;
 }
+h3{
+
+color: black;
+font-weight: bold;
+}
 h1 {
 
-color:#0000FF;
+color:white;
 margin-left:320px;
 margin-top:-70px;
 font-size: 3em;
@@ -141,10 +146,10 @@ font-weight: bold;
 
 
 #main_content .container a{
-		background-color:#AAFFAA;
+		background-color:#DD0933;
 		
 		margin-left:60px;
-	
+	border:2px solid #2A7FFF;
 		
 	}
 	
@@ -154,7 +159,7 @@ font-weight: bold;
 	
 	}
 	#footer{
-			background-color:#E1E1E1;
+			background-color:#ED4343;
 			width:959px;
 			margin:0px;
 			
@@ -171,12 +176,58 @@ font-weight: bold;
 			
 				}
 	
-	#footer ul{
+#footer ul{
 			width:50%;
 			position:relative;
 			left:600px;
 			
 			}
+@charset "utf-8";
+
+#container{
+				height:450px;
+				width:650px;
+				margin:20px auto;
+				position:relative;
+		}
+		
+		#img{
+				height:450px;
+				width:650px;
+				position:absolute;
+		}
+		
+		#left_holder{
+				height:450px;
+				width:100px;
+				position:absolute;
+				left:0px;
+				top:0px;
+		}
+		
+		#right_holder{
+				height:450px;
+				width:100px;
+				position:absolute;
+				right:0px;
+				top:0px;
+		}
+		
+		.left{
+			height:50px;
+			width:50px;
+			position:absolute;
+			top:40%;
+			left:0px;
+		}
+		
+		.right{
+			height:50px;
+			width:50px;
+			position:absolute;
+			top:40%;
+			right:0px;
+		}
 	
 	#copyright{
 	  

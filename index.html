@@ -6,29 +6,11 @@
 <head>
 		<meta charset="UTF-8" />
 		<title>Drawing with the grid</title>
-		<link href="style.css" type="text/css" rel="stylesheet">
-		<script type="text/javascript">
+		<link href="style.css"src="images" type="text/css" rel="stylesheet">
+		<script type="text/javascript" src="slider.js"></script>
 
 			
-			var slideimages = new Array() // create new array to preload images
-			slideimages[0] = new Image() // create new instance of image object
-			slideimages[0].src = "w1.jpg" // set image object src property to an image's src, preloading that image in the process
-			slideimages[1] = new Image()
-			slideimages[1].src = "w2.jpg"
-			slideimages[2] = new Image()
-			slideimages[2].src = "w3.jpg"
-			slideimages[3] = new Image()
-			slideimages[3].src = "w4.jpg"
-			slideimages[4] = new Image()
-			slideimages[4].src = "w5.jpg"
-			slideimages[5] = new Image()
-			slideimages[5].src = "w6.jpg"
-			slideimages[6] = new Image()
-			slideimages[6].src = "w7.jpg"
-			slideimages[7] = new Image()
-			slideimages[7].src = "w8.jpg"
-
-		</script>
+			
 </head>
 
 
@@ -43,7 +25,7 @@
 		
 				<div class="container">
 					<p>
-						<a href="#"><img src="contact04.jpg" width="200" height="100" alt="this background is for testing document layout" title="this image links to my classes page" /></a>
+						<a href="classes.html"><img src="contact04.jpg" width="300" height="110" alt="this background is for testing document layout" title="this image links to my classes page" /></a>
 					 <h1> Drawing with the grid</h1>
 					</p>
 				
@@ -58,8 +40,8 @@
 				<div class="container">
 					<ul>
 				
-						 <li><button id="home"><a href="index.html"><b>HOME</b></a></button></li>
-						<li><button id="classes"><a href="classes.html"><b>CLASSES</b></a></button></li>
+						 <a href="index.html"><li><button id="home"><b>HOME</b></button></li></a>
+						<a href="classes.html"><li><button id="classes"><b>CLASSES</b></button></li></a>
 						<li><button id="about"><a href="about.html"><b>ABOUT</b></a></button></li>
 						<li><button id="contact"><a href="contact.html"><b>CONTACT</b></a></button></li>
 						
@@ -76,13 +58,18 @@
 		<div id="main_content">
 					
 			
-			<div id="main">
-				<img src="me.gif" id="slide" width="700" height="450" />
-			</div>
+			<body onload="slideA()">
+	               <div id="container">
+		           <img src="images\img.png" height="600" width="800" title="WICKED CAR DESIGN CONCEPT" id="img"/>
+		                <a href="classes.html"> <div id="left_holder"><img onclick="slide(-1)" class="left" src="images/left.png"/></div>
+		           <div id="right_holder"><img onclick="slide(1)" class="right" src="images/right.png"/></div></a>
+	             </div>
+	
+
+                </body>
 			<div id="content">
-					<h2>About Website!</h2>
-					<li>Mohammad Nofal</li>
-					<li>Idriss Mohammad</li>
+					<h2>About The Website!!!!!</h2>
+					
 			
 			</div>
 	</section>			
@@ -104,7 +91,7 @@
 				<li><a href="https://plus.google.com/"><img src="google.jpg" width="49" height="49" alt="this background is for testing document layout" /></a></li>
 			</ul>
 			<div id="copyright">
-				<p><b>All rights reserved © New Website 2014</b></p>
+				<h3>All rights reserved © New Website 2014</h3>
 			</div>
 		
 		</div>
@@ -113,27 +100,6 @@
 	
 	</div>
 	
-	<script type="text/javascript">
-
-		//variable that will increment through the images
-		var step=0
-
-		function slideit(){
-		 //if browser does not support the image object, exit.
-		 if (!document.images)
-		  return
-		 document.getElementById('slide').src = slideimages[step].src
-		 if (step<8)
-		  step++
-		 else
-		  step=0
-		 //call function "slideit()" every 2.5 seconds
-		 setTimeout("slideit()",2000)
-		}
-
-		slideit()
-
-	</script>
 	
 
 
